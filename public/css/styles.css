@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #FDF5E6;
+    --border: .1rem solid #4682B4;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+.header {
+    background: #D2B48C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icon a img {
+    height: 5rem;
+}
+
+.menu-items-container {
+    position: absolute;
+    top: 10rem;
+    left: 7rem;
+    width: 70rem;
+    padding: 0 1.5rem;
+}
+
+.menu-items-container .menu-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 5rem;
+}
+
+.menu-items-container .menu-item img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 5rem;
+}
+
+.menu-items-container .menu-item .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.menu-items-container .menu-item .content .price {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.menu-items-container .menu-item .content button {
+    height: 2rem;
+    width: 2rem;
+}
+
+.background-login {
+    margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.background-login .main {
+    width: 350px;
+	height: 500px;
+	overflow: hidden;
+    background: var(--main-color);
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+
+.background-login .main .login {
+    position: relative;
+    padding-top: 10rem;
+}
+
+.background-login .main .login input {
+    width: 80%;
+	height: 40px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.background-login .main .login button {
+    width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?t=st=1655465308~exp=1655465908~hmac=1ebf7a9896ecd902f9bd3feb97aa8450c0c239021dfed1e69df0874efa8e1527&w=1060);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    margin-left: 10rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 2rem;
+}
